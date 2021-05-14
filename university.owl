@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://myxzlpltk.github.io/me/university.owl#"
+     xml:base="http://myxzlpltk.github.io/me/university.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:university="http://myxzlpltk.github.io/me/university.owl#"
+     xmlns:university1="http://myxzlpltk.github.io/me/university.ow#">
+    <owl:Ontology rdf:about="http://myxzlpltk.github.io/me/university.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#studies -->
+
+    <owl:ObjectProperty rdf:about="http://myxzlpltk.github.io/me/university.ow#studies">
+        <rdfs:domain rdf:resource="http://myxzlpltk.github.io/me/university.ow#Student"/>
+        <rdfs:range rdf:resource="http://myxzlpltk.github.io/me/university.ow#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://myxzlpltk.github.io/me/university.ow#teaches">
+        <rdfs:domain rdf:resource="http://myxzlpltk.github.io/me/university.ow#Lecturer"/>
+        <rdfs:range rdf:resource="http://myxzlpltk.github.io/me/university.ow#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://myxzlpltk.github.io/me/university.ow#first_name">
+        <rdfs:domain rdf:resource="http://myxzlpltk.github.io/me/university.ow#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://myxzlpltk.github.io/me/university.ow#last_name">
+        <rdfs:domain rdf:resource="http://myxzlpltk.github.io/me/university.ow#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://myxzlpltk.github.io/me/university.ow#staffID">
+        <rdfs:domain rdf:resource="http://myxzlpltk.github.io/me/university.ow#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://myxzlpltk.github.io/me/university.ow#studentID">
+        <rdfs:domain rdf:resource="http://myxzlpltk.github.io/me/university.ow#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#CSModule -->
+
+    <owl:Class rdf:about="http://myxzlpltk.github.io/me/university.ow#CSModule">
+        <rdfs:subClassOf rdf:resource="http://myxzlpltk.github.io/me/university.ow#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Lecturer -->
+
+    <owl:Class rdf:about="http://myxzlpltk.github.io/me/university.ow#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://myxzlpltk.github.io/me/university.ow#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#MathModule -->
+
+    <owl:Class rdf:about="http://myxzlpltk.github.io/me/university.ow#MathModule">
+        <rdfs:subClassOf rdf:resource="http://myxzlpltk.github.io/me/university.ow#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Module -->
+
+    <owl:Class rdf:about="http://myxzlpltk.github.io/me/university.ow#Module"/>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Person -->
+
+    <owl:Class rdf:about="http://myxzlpltk.github.io/me/university.ow#Person"/>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Student -->
+
+    <owl:Class rdf:about="http://myxzlpltk.github.io/me/university.ow#Student">
+        <rdfs:subClassOf rdf:resource="http://myxzlpltk.github.io/me/university.ow#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#CS101">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#CS103 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#CS103">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#Lecturer1">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#Lecturer"/>
+        <university1:teaches rdf:resource="http://myxzlpltk.github.io/me/university.ow#CS101"/>
+        <university1:teaches rdf:resource="http://myxzlpltk.github.io/me/university.ow#M201"/>
+        <university1:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larisa</university1:first_name>
+        <university1:last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soldatova</university1:last_name>
+        <university1:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">417686</university1:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#Lecturer2">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#M201">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#M204 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#M204">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#Student1">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#Student"/>
+        <university1:studies rdf:resource="http://myxzlpltk.github.io/me/university.ow#CS101"/>
+        <university1:studies rdf:resource="http://myxzlpltk.github.io/me/university.ow#M201"/>
+        <university1:studies rdf:resource="http://myxzlpltk.github.io/me/university.ow#M204"/>
+        <university1:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Josef</university1:first_name>
+        <university1:last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baker</university1:last_name>
+        <university1:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">266814</university1:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myxzlpltk.github.io/me/university.ow#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://myxzlpltk.github.io/me/university.ow#Student2">
+        <rdf:type rdf:resource="http://myxzlpltk.github.io/me/university.ow#Student"/>
+        <university1:studies rdf:resource="http://myxzlpltk.github.io/me/university.ow#CS103"/>
+        <university1:studies rdf:resource="http://myxzlpltk.github.io/me/university.ow#M201"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://myxzlpltk.github.io/me/university.ow#CSModule"/>
+            <rdf:Description rdf:about="http://myxzlpltk.github.io/me/university.ow#Lecturer"/>
+            <rdf:Description rdf:about="http://myxzlpltk.github.io/me/university.ow#MathModule"/>
+            <rdf:Description rdf:about="http://myxzlpltk.github.io/me/university.ow#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
